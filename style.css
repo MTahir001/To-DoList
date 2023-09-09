@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+
+  height: 100vh;
+  width: 100vw;
+
+  background: #a5aff6;
+}
+.parent {
+  height: 80%;
+  width: 60%;
+
+  min-width: 600px;
+  max-width: 800px;
+}
+
+.top,
+.bottom,
+.item,
+input,
+button {
+  font-size: 20px;
+  border-radius: 25px;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  height: 20%;
+  min-height: 100px;
+  width: 100%;
+  padding: 20px;
+
+  font-family: "Poppins", sans-serif;
+  background: #f6e1bc;
+}
+h2 {
+  color: #7926ec;
+  height: 50%;
+  padding-left: 25px;
+}
+
+.add-item {
+  display: flex;
+}
+
+input {
+  width: 85%;
+  height: 50px;
+  padding: 10px 30px;
+  outline: none;
+
+  line-height: 30px;
+
+  resize: none;
+  background: #e3cca0;
+  font-family: "Poppins", sans-serif;
+  color: #7926ec;
+}
+button {
+  width: 25%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+
+  color: #f6e1bc;
+  background: #7926ec;
+
+  transition: 0.3s;
+}
+button:hover {
+  color: #7926ec;
+  background: #e3cca0;
+}
+
+.bottom {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  font-family: "Poppins", sans-serif;
+  background: #7926ec;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 45px;
+  margin-bottom: 10px;
+
+  background: #f6e1bc;
+}
+.delet {
+  padding: 0 15px;
+}
+.check {
+  padding-left: 15px;
+}
+.item .task {
+  width: 90%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.item i {
+  color: black;
+}
+
+.item i:hover {
+  cursor: pointer;
+  color: #7926ec;
+}
+.task.done {
+  text-decoration: line-through;
+}
+.done {
+  opacity: 0.5;
+  color: grey;
+}
+
+@media (max-width: 600px) {
+  .top,
+  .bottom,
+  .item,
+  input,
+  button {
+    font-size: 16px;
+  }
+  .parent {
+    min-width: 400px;
+    max-width: 500px;
+  }
+  .add-item {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  input {
+    height: 35px;
+    width: 100%;
+  }
+  .item {
+    height: 35px;
+  }
+}
