@@ -1,6 +1,6 @@
 "Use Strict";
 
-const textArea = document.querySelector("#task-id");
+const textArea = document.querySelector(".task-id");
 const addBtn = document.querySelector("button");
 const bottom = document.querySelector(".bottom");
 const delet = document.querySelector(".delet");
