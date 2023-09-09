@@ -60,6 +60,8 @@ input {
   width: 85%;
   height: 50px;
   padding: 10px 30px;
+
+  border: 2px solid black;
   outline: none;
 
   line-height: 30px;
@@ -76,6 +78,8 @@ button {
 
   color: #f6e1bc;
   background: #7926ec;
+  outline: none;
+  border: 2px solid black;
 
   transition: 0.3s;
 }
